@@ -1,0 +1,45 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "bettermobfarms:origin_egg",
+    "cases": [
+      {
+        "when": "blue_egg",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bettermobfarms:item/mutated_blue_egg",
+          "tints": [
+            {
+              "type": "bettermobfarms:dna",
+              "default": -1
+            }
+          ]
+        }
+      },
+      {
+        "when": "brown_egg",
+        "model": {
+          "type": "minecraft:model",
+          "model": "bettermobfarms:item/mutated_brown_egg",
+          "tints": [
+            {
+              "type": "bettermobfarms:dna",
+              "default": -1
+            }
+          ]
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "bettermobfarms:item/mutated_egg",
+      "tints": [
+        {
+          "type": "bettermobfarms:dna",
+          "default": -1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+	"credit": "Made by woulvee in Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "bettermobfarms:block/fan",
+		"particle": "bettermobfarms:block/fan"
+	},
+	"elements": [
+		{
+			"name": "FanBoxTop",
+			"from": [0, 14, 0],
+			"to": [16, 16, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 4, 4, 4.5], "texture": "#0"},
+				"east": {"uv": [3, 0, 4, 0.5], "texture": "#0"},
+				"west": {"uv": [8, 0, 9, 0.5], "texture": "#0"},
+				"up": {"uv": [8, 0, 4, 1], "texture": "#0"},
+				"down": {"uv": [4, 9, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"name": "FBFront_L",
+			"from": [14, 2, 0],
+			"to": [16, 14, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 4.5, 0.5, 7.5], "texture": "#0"},
+				"east": {"uv": [3, 0.5, 4, 3.5], "texture": "#0"},
+				"west": {"uv": [0.5, 10, 1.5, 13], "texture": "#0"}
+			}
+		},
+		{
+			"name": "FBFront_R",
+			"from": [0, 2, 0],
+			"to": [2, 14, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 4.5, 4, 7.5], "texture": "#0"},
+				"east": {"uv": [2.5, 10, 3.5, 13], "texture": "#0"},
+				"west": {"uv": [8, 0.5, 9, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "FanBoxBigBox",
+			"from": [0, 0, 4],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [3.5, 8, 7.5, 12], "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 4], "texture": "#0"},
+				"south": {"uv": [4, 4, 8, 8], "texture": "#0"},
+				"west": {"uv": [9, 0, 12, 4], "texture": "#0"},
+				"up": {"uv": [8, 1, 4, 4], "texture": "#0"},
+				"down": {"uv": [16, 4, 12, 1], "texture": "#0"}
+			}
+		},
+		{
+			"name": "FanBoxBot",
+			"from": [0, 0, 0],
+			"to": [16, 2, 4],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
+			"faces": {
+				"north": {"uv": [0, 7.5, 4, 8], "texture": "#0"},
+				"east": {"uv": [3, 3.5, 4, 4], "texture": "#0"},
+				"west": {"uv": [8, 3.5, 9, 4], "texture": "#0"},
+				"up": {"uv": [4, 10, 0, 9], "texture": "#0"},
+				"down": {"uv": [16, 1, 12, 0], "texture": "#0"}
+			}
+		},
+		{
+			"name": "PropellerBase",
+			"from": [7.5, 7.5, 1],
+			"to": [8.5, 8.5, 4],
+			"faces": {
+				"north": {"uv": [13.25, 6, 13.5, 6.25], "texture": "#0"},
+				"east": {"uv": [12.5, 6, 13.25, 6.25], "texture": "#0"},
+				"south": {"uv": [14.25, 6, 14.5, 6.25], "texture": "#0"},
+				"west": {"uv": [13.5, 6, 14.25, 6.25], "texture": "#0"},
+				"up": {"uv": [13.5, 6, 13.25, 5.25], "texture": "#0"},
+				"down": {"uv": [13.75, 5.25, 13.5, 6], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Blade1",
+			"from": [3, 7, 2],
+			"to": [7, 9, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 2.5]},
+			"faces": {
+				"north": {"uv": [8.5, 4.5, 9, 5.5], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [9.25, 4.5, 9.75, 5.5], "rotation": 270, "texture": "#0"},
+				"west": {"uv": [9, 4.5, 8.5, 4.25], "rotation": 270, "texture": "#0"},
+				"up": {"uv": [8.25, 4.5, 8.5, 5.5], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [9, 4.5, 9.25, 5.5], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "Blade2",
+			"from": [7, 3, 2],
+			"to": [9, 13, 3],
+			"faces": {
+				"north": {"uv": [8.5, 6.25, 9, 8.75], "texture": "#0"},
+				"east": {"uv": [8.25, 6.25, 8.5, 8.75], "texture": "#0"},
+				"south": {"uv": [9.25, 6.25, 9.75, 8.75], "texture": "#0"},
+				"west": {"uv": [9, 6.25, 9.25, 8.75], "texture": "#0"},
+				"up": {"uv": [9, 6.25, 8.5, 6], "texture": "#0"},
+				"down": {"uv": [9.5, 6, 9, 6.25], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Blade3",
+			"from": [9, 7, 2],
+			"to": [13, 9, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 2.5]},
+			"faces": {
+				"north": {"uv": [10.25, 4.5, 10.75, 5.5], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [10.75, 4.5, 10.25, 4.25], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [11, 4.5, 11.5, 5.5], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [10.75, 4.5, 11, 5.5], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [10, 4.5, 10.25, 5.5], "rotation": 90, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, 225, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"head": {
+			"translation": [0, 0, 0.25]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "Base",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"nbt": "{}",
+			"children": [
+				{
+					"name": "Fanbox",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"nbt": "{}",
+					"children": [0, 1, 2, 3, 4]
+				},
+				{
+					"name": "Propeller",
+					"origin": [0, 0, 0],
+					"color": 0,
+					"nbt": "{}",
+					"children": [5]
+				}
+			]
+		},
+		{
+			"name": "Blade",
+			"origin": [0, 8, -5.5],
+			"color": 0,
+			"nbt": "{}",
+			"children": [6, 7, 8]
+		}
+	]
+}

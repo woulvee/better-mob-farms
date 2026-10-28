@@ -1,0 +1,7 @@
+{
+  "type": "bettermobfarms:extracting",
+  "ingredient": "bettermobfarms:endermite_cadaver",
+  "syringe": {
+    "id": "bettermobfarms:syringe_warp_nucleus"
+  }
+}

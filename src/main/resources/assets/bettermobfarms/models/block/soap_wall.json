@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:block/thin_block",
+  "textures": {
+    "particle": "bettermobfarms:block/soap",
+    "soap": "bettermobfarms:block/soap"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 15],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#soap"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#soap", "cullface": "south"},
+        "up": {"uv": [0, 0, 16, 1], "texture": "#soap", "cullface": "up"},
+        "down": {"uv": [0, 15, 16, 16], "texture": "#soap", "cullface": "down"},
+        "west": {"uv": [15, 0, 16, 16], "texture": "#soap", "cullface": "west"},
+        "east": {"uv": [0, 0, 1, 16], "texture": "#soap", "cullface": "east"}
+      }
+    }
+  ]
+}

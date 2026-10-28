@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:netherite_ingot",
+    "O": "minecraft:obsidian",
+    "X": "minecraft:iron_block"
+  },
+  "pattern": [
+    "XOX",
+    "O#O",
+    "XOX"
+  ],
+  "result": {
+    "count": 8,
+    "id": "bettermobfarms:netheriteforged_obsidian"
+  }
+}

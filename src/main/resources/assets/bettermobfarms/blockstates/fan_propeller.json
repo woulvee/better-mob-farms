@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bettermobfarms:block/fan_propeller_north",
+      "uvlock": false
+    },
+    "facing=east": {
+      "model": "bettermobfarms:block/fan_propeller_east",
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "bettermobfarms:block/fan_propeller_south",
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "bettermobfarms:block/fan_propeller_west",
+      "uvlock": false
+    }
+  }
+}

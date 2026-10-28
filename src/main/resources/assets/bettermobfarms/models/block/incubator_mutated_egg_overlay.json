@@ -1,0 +1,116 @@
+{
+	"format_version": "26.3",
+	"credit": "Made by woulvee in Blockbench",
+	"textures": {
+		"6": "bettermobfarms:block/incubator_mutated_egg",
+		"particle": "bettermobfarms:block/incubator_side_full"
+	},
+	"elements": [
+		{
+			"name": "MutatedEgg",
+			"from": [9, 5, 7],
+			"to": [10, 8, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 4, 8]},
+			"faces": {
+				"north": {"uv": [1, 4, 2, 7], "texture": "#6", "tintindex": 0},
+				"east": {"uv": [0, 4, 2, 7], "texture": "#6", "tintindex": 0},
+				"south": {"uv": [0, 4, 1, 7], "texture": "#6", "tintindex": 0},
+				"up": {"uv": [0, 2, 2, 3], "rotation": 90, "texture": "#6", "tintindex": 0},
+				"down": {"uv": [0, 8, 2, 9], "rotation": 90, "texture": "#6", "tintindex": 0}
+			}
+		},
+		{
+			"name": "MutatedEgg",
+			"from": [7, 4, 7],
+			"to": [9, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 4, 7]},
+			"faces": {
+				"north": {"uv": [2, 3, 4, 8], "texture": "#6", "tintindex": 0},
+				"east": {"uv": [0, 3, 2, 8], "texture": "#6", "tintindex": 0},
+				"south": {"uv": [6, 3, 8, 8], "texture": "#6", "tintindex": 0},
+				"west": {"uv": [4, 3, 6, 8], "texture": "#6", "tintindex": 0},
+				"up": {"uv": [2, 0, 4, 2], "texture": "#6", "tintindex": 0},
+				"down": {"uv": [2, 9, 4, 11], "texture": "#6", "tintindex": 0}
+			}
+		},
+		{
+			"name": "MutatedEgg",
+			"from": [7, 5, 6],
+			"to": [9, 8, 7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 4, 6]},
+			"faces": {
+				"north": {"uv": [2, 4, 4, 7], "texture": "#6", "tintindex": 0},
+				"east": {"uv": [2, 4, 3, 7], "texture": "#6", "tintindex": 0},
+				"west": {"uv": [3, 4, 4, 7], "texture": "#6", "tintindex": 0},
+				"up": {"uv": [2, 2, 4, 3], "texture": "#6", "tintindex": 0},
+				"down": {"uv": [2, 8, 4, 9], "texture": "#6", "tintindex": 0}
+			}
+		},
+		{
+			"name": "MutatedEgg",
+			"from": [7, 5, 9],
+			"to": [9, 8, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 4, 9]},
+			"faces": {
+				"east": {"uv": [7, 4, 8, 7], "texture": "#6", "tintindex": 0},
+				"south": {"uv": [6, 4, 8, 7], "texture": "#6", "tintindex": 0},
+				"west": {"uv": [6, 4, 7, 7], "texture": "#6", "tintindex": 0},
+				"up": {"uv": [6, 2, 8, 3], "texture": "#6", "tintindex": 0},
+				"down": {"uv": [6, 8, 8, 9], "texture": "#6", "tintindex": 0}
+			}
+		},
+		{
+			"name": "MutatedEgg",
+			"from": [6, 5, 7],
+			"to": [7, 8, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [5, 4, 8]},
+			"faces": {
+				"north": {"uv": [4, 4, 5, 7], "texture": "#6", "tintindex": 0},
+				"south": {"uv": [5, 4, 6, 7], "texture": "#6", "tintindex": 0},
+				"west": {"uv": [4, 4, 6, 7], "texture": "#6", "tintindex": 0},
+				"up": {"uv": [4, 2, 6, 3], "rotation": 90, "texture": "#6", "tintindex": 0},
+				"down": {"uv": [4, 8, 6, 9], "rotation": 90, "texture": "#6", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -135, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [30, -135, 0],
+			"scale": [0.625, 0.625, 0.625]
+		},
+		"fixed": {
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "Mutated_Egg",
+			"origin": [8, 4, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

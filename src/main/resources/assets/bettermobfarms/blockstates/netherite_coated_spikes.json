@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bettermobfarms:block/netherite_coated_spikes"
+      },
+      {
+        "model": "bettermobfarms:block/netherite_coated_spikes",
+        "y": 90
+      },
+      {
+        "model": "bettermobfarms:block/netherite_coated_spikes",
+        "y": 180
+      },
+      {
+        "model": "bettermobfarms:block/netherite_coated_spikes",
+        "y": 270
+      }
+    ]
+  }
+}

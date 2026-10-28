@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "minecraft:heavy_weighted_pressure_plate",
+    "R": "minecraft:iron_ingot",
+    "X": "minecraft:glass_bottle"
+  },
+  "pattern": [
+    "  #",
+    " X ",
+    "R  "
+  ],
+  "result": {
+    "id": "bettermobfarms:syringe"
+  }
+}

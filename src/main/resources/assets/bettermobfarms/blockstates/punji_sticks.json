@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "bettermobfarms:block/punji_sticks"
+      },
+      {
+        "model": "bettermobfarms:block/punji_sticks",
+        "y": 90
+      },
+      {
+        "model": "bettermobfarms:block/punji_sticks",
+        "y": 180
+      },
+      {
+        "model": "bettermobfarms:block/punji_sticks",
+        "y": 270
+      }
+    ]
+  }
+}

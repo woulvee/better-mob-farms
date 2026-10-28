@@ -1,0 +1,7 @@
+{
+  "parent": "bettermobfarms:item/syringe_standard",
+  "textures": {
+    "layer0": "bettermobfarms:item/syringe",
+    "layer1": "bettermobfarms:item/syringe_overlay"
+  }
+}

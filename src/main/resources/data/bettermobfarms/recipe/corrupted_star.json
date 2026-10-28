@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:amethyst_shard",
+    "N": "bettermobfarms:nether_star_shard",
+    "P": "minecraft:ender_pearl"
+  },
+  "pattern": [
+    "ANA",
+    "NPN",
+    "ANA"
+  ],
+  "result": {
+    "id": "bettermobfarms:corrupted_star"
+  }
+}

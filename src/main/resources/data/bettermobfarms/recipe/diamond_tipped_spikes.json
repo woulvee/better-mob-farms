@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "minecraft:diamond",
+    "X": "bettermobfarms:iron_spikes"
+  },
+  "pattern": [
+    " # ",
+    "#X#",
+    "XXX"
+  ],
+  "result": {
+    "count": 4,
+    "id": "bettermobfarms:diamond_tipped_spikes"
+  }
+}

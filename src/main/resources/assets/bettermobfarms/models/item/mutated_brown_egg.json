@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bettermobfarms:item/brown_egg_mutated"
+  }
+}

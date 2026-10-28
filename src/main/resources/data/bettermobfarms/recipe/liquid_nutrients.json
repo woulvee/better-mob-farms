@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:water_bucket",
+    "minecraft:bone_meal",
+    "minecraft:sugar",
+    "minecraft:wheat"
+  ],
+  "result": {
+    "count": 4,
+    "id": "bettermobfarms:liquid_nutrients"
+  }
+}

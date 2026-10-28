@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "bettermobfarms:block/fan", "uvlock": false },
+    "facing=east":  { "model": "bettermobfarms:block/fan", "y":  90, "uvlock": false },
+    "facing=south": { "model": "bettermobfarms:block/fan", "y": 180, "uvlock": false },
+    "facing=west":  { "model": "bettermobfarms:block/fan", "y": 270, "uvlock": false }
+  }
+}

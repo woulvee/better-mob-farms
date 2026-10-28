@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "face=floor,facing=north": { "model": "bettermobfarms:block/soap_floor" },
+    "face=floor,facing=east": { "model": "bettermobfarms:block/soap_floor" },
+    "face=floor,facing=south": { "model": "bettermobfarms:block/soap_floor" },
+    "face=floor,facing=west": { "model": "bettermobfarms:block/soap_floor" },
+    "face=wall,facing=north": { "model": "bettermobfarms:block/soap_wall" },
+    "face=wall,facing=east": { "model": "bettermobfarms:block/soap_wall", "y": 90 },
+    "face=wall,facing=south": { "model": "bettermobfarms:block/soap_wall", "y": 180 },
+    "face=wall,facing=west": { "model": "bettermobfarms:block/soap_wall", "y": 270 },
+    "face=ceiling,facing=north": { "model": "bettermobfarms:block/soap_floor", "x": 180 },
+    "face=ceiling,facing=east": { "model": "bettermobfarms:block/soap_floor", "x": 180 },
+    "face=ceiling,facing=south": { "model": "bettermobfarms:block/soap_floor", "x": 180 },
+    "face=ceiling,facing=west": { "model": "bettermobfarms:block/soap_floor", "x": 180 }
+  }
+}

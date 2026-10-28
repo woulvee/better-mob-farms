@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_ingot",
+  "base": "bettermobfarms:diamond_tipped_spikes",
+  "result": {
+    "id": "bettermobfarms:netherite_coated_spikes"
+  }
+}

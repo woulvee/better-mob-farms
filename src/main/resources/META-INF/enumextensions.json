@@ -1,0 +1,22 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "BETTERMOBFARMS_SYRINGE",
+      "constructor": "(ZZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "com/woulvee/bettermobfarms/client/SyringeArmPose",
+        "field": "POSE"
+      }
+    },
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "BETTERMOBFARMS_SYRINGE_SAMPLING",
+      "constructor": "(ZZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "com/woulvee/bettermobfarms/client/SyringeArmPose",
+        "field": "SAMPLING"
+      }
+    }
+  ]
+}

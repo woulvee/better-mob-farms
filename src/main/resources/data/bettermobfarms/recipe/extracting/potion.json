@@ -1,0 +1,13 @@
+{
+  "type": "bettermobfarms:extracting",
+  "ingredient": "minecraft:potion",
+  "syringe": {
+    "id": "bettermobfarms:potion_syringe"
+  },
+  "byproduct": {
+    "id": "minecraft:glass_bottle"
+  },
+  "copy_components": [
+    "minecraft:potion_contents"
+  ]
+}

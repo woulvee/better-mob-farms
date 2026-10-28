@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "closed=false,facing=north": { "model": "bettermobfarms:block/bear_trap" },
+    "closed=false,facing=east": { "model": "bettermobfarms:block/bear_trap", "y": 90 },
+    "closed=false,facing=south": { "model": "bettermobfarms:block/bear_trap", "y": 180 },
+    "closed=false,facing=west": { "model": "bettermobfarms:block/bear_trap", "y": 270 },
+    "closed=true,facing=north": { "model": "bettermobfarms:block/bear_trap_closed" },
+    "closed=true,facing=east": { "model": "bettermobfarms:block/bear_trap_closed", "y": 90 },
+    "closed=true,facing=south": { "model": "bettermobfarms:block/bear_trap_closed", "y": 180 },
+    "closed=true,facing=west": { "model": "bettermobfarms:block/bear_trap_closed", "y": 270 }
+  }
+}
