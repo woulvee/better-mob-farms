@@ -21,7 +21,7 @@ public class BMFBlocks {
             p -> new SpikeBlock(3f, BMFDamageTypes.SPIKE, p),
             p -> p.mapColor(MapColor.METAL).strength(1.5f, 2.8f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL));
     public static final DeferredBlock<SpikeBlock> DIAMOND_SPIKES = BLOCKS.registerBlock("diamond_tipped_spikes",
-            p -> new SpikeBlock(5f, BMFDamageTypes.SPIKE, p),
+            p -> new SpikeBlock(4.5f, BMFDamageTypes.SPIKE, p),
             p -> p.mapColor(MapColor.DIAMOND).strength(2.3f, 5f).requiresCorrectToolForDrops().noOcclusion().sound(SoundType.METAL));
     public static final DeferredBlock<NetheriteSpikesBlock> NETHERITE_SPIKES = BLOCKS.registerBlock("netherite_coated_spikes",
             NetheriteSpikesBlock::new,
@@ -54,7 +54,19 @@ public class BMFBlocks {
             p -> p.mapColor(MapColor.SNOW).instabreak().noOcclusion().noLootTable().replaceable().sound(SoundType.HONEY_BLOCK)
                     .pushReaction(PushReaction.DESTROY));
 
+    // Made from a water cauldron with bone meal. Same properties as the vanilla cauldron, has no item of its own and drops a cauldron.
+    public static final DeferredBlock<LyeCauldronBlock> LYE_CAULDRON = BLOCKS.registerBlock("lye_cauldron",
+            LyeCauldronBlock::new,
+            p -> p.mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(2f).noOcclusion());
+
     public static final DeferredBlock<IncubatorBlock> INCUBATOR = BLOCKS.registerBlock("incubator",
             IncubatorBlock::new,
             p -> p.mapColor(DyeColor.WHITE).strength(3.5f).requiresCorrectToolForDrops().noOcclusion());
+
+    public static final DeferredBlock<FeedingTroughBlock> FEEDING_TROUGH = BLOCKS.registerBlock("feeding_trough",
+            FeedingTroughBlock::new,
+            p -> p.mapColor(MapColor.WOOD).strength(2f, 3f).noOcclusion().sound(SoundType.WOOD).ignitedByLava());
+    public static final DeferredBlock<ScarecrowBlock> SCARECROW = BLOCKS.registerBlock("scarecrow",
+            ScarecrowBlock::new,
+            p -> p.mapColor(MapColor.WOOD).strength(1f).noOcclusion().forceSolidOff().sound(SoundType.WOOD).ignitedByLava().pushReaction(PushReaction.DESTROY));
 }

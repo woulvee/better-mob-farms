@@ -1,21 +1,29 @@
 {
   "model": {
     "type": "minecraft:condition",
-    "property": "bettermobfarms:sampling",
+    "property": "bettermobfarms:self_use",
     "on_true": {
       "type": "minecraft:model",
-      "model": "bettermobfarms:item/syringe_sampling"
+      "model": "bettermobfarms:item/syringe_self"
     },
     "on_false": {
       "type": "minecraft:condition",
-      "property": "minecraft:using_item",
-      "on_false": {
-        "type": "minecraft:model",
-        "model": "bettermobfarms:item/syringe_standard"
-      },
+      "property": "bettermobfarms:sampling",
       "on_true": {
         "type": "minecraft:model",
-        "model": "bettermobfarms:item/syringe_injecting"
+        "model": "bettermobfarms:item/syringe_sampling"
+      },
+      "on_false": {
+        "type": "minecraft:condition",
+        "property": "minecraft:using_item",
+        "on_false": {
+          "type": "minecraft:model",
+          "model": "bettermobfarms:item/syringe_standard"
+        },
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "bettermobfarms:item/syringe_injecting"
+        }
       }
     }
   }

@@ -13,8 +13,11 @@
   "block.bettermobfarms.fan_propeller": "Fan Propeller",
   "block.bettermobfarms.incubator": "Incubator",
   "block.bettermobfarms.bear_trap": "Bear Trap",
+  "block.bettermobfarms.feeding_trough": "Feeding Trough",
+  "block.bettermobfarms.scarecrow": "Scarecrow",
 
   "block.bettermobfarms.soap": "Soap",
+  "block.bettermobfarms.lye_cauldron": "Lye Cauldron",
 
   "effect.bettermobfarms.trapped": "Trapped",
   "effect.bettermobfarms.soaped": "Soaped",
@@ -77,7 +80,12 @@
   "bettermobfarms.configuration.section.bettermobfarms.common.toml": "BetterMobFarms Configs",
   "bettermobfarms.configuration.section.bettermobfarms.common.toml.title": "BetterMobFarms Configs",
   "bettermobfarms.configuration.showFanAirflow": "Show Fan Airflow",
-  "bettermobfarms.configuration.bearTrapBlacklist": "Bear Trap Blacklist",
+  "bettermobfarms.configuration.feedingTroughInterval": "Feeding Trough Interval",
+  "bettermobfarms.configuration.feedingTroughRange": "Feeding Trough Range",
+  "bettermobfarms.configuration.feedingTroughMaxAnimals": "Feeding Trough Max Animals",
+  "bettermobfarms.configuration.scarecrowRepelRadius": "Scarecrow Repel Radius",
+  "bettermobfarms.configuration.scarecrowLureRadius": "Scarecrow Lure Radius",
+  "bettermobfarms.configuration.scarecrowIgnoreTime": "Scarecrow Ignore Time",
   "bettermobfarms.configuration.section.bettermobfarms.client.toml": "BetterMobFarms Client Configs",
   "bettermobfarms.configuration.section.bettermobfarms.client.toml.title": "BetterMobFarms Client Configs",
   "bettermobfarms.configuration.dnaColors": "DNA Colors"

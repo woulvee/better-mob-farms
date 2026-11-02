@@ -76,6 +76,21 @@ public class SoapBlock extends FaceAttachedHorizontalDirectionalBlock {
         };
     }
 
+    // Neighboring soap layers on the same floor or wall hide the thin edges between them, so they look like one layer.
+    // Only the edge faces of the models have a cullface, the flat sides are never skipped.
+    @Override
+    protected boolean skipRendering(BlockState state, BlockState neighborState, Direction direction) {
+        return neighborState.is(this) && neighborState.getValue(FACE) == state.getValue(FACE)
+                && neighborState.getValue(FACING) == state.getValue(FACING) && isEdge(state, direction);
+    }
+
+    private static boolean isEdge(BlockState state, Direction direction) {
+        if (state.getValue(FACE) != AttachFace.WALL) {
+            return direction.getAxis().isHorizontal();
+        }
+        return direction.getAxis() != state.getValue(FACING).getAxis();
+    }
+
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return Shapes.empty();

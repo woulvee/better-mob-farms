@@ -15,4 +15,6 @@ public class BMFMenus {
             () -> new MenuType<>(FanMenu::new, FeatureFlags.VANILLA_SET));
     public static final DeferredHolder<MenuType<?>, MenuType<IncubatorMenu>> INCUBATOR = MENUS.register("incubator",
             () -> new MenuType<>(IncubatorMenu::new, FeatureFlags.VANILLA_SET));
+    public static final DeferredHolder<MenuType<?>, MenuType<FeedingTroughMenu>> FEEDING_TROUGH = MENUS.register("feeding_trough",
+            () -> new MenuType<>(FeedingTroughMenu::new, FeatureFlags.VANILLA_SET));
 }

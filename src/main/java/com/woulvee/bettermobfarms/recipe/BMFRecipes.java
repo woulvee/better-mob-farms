@@ -16,6 +16,9 @@ public class BMFRecipes {
     public static final DeferredHolder<RecipeType<?>, RecipeType<ExtractingRecipe>> EXTRACTING_TYPE = RECIPE_TYPES.register("extracting", RecipeType::simple);
     public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<ExtractingRecipe>> EXTRACTING_SERIALIZER = RECIPE_SERIALIZERS.register("extracting",
             () -> new RecipeSerializer<>(ExtractingRecipe.CODEC, ExtractingRecipe.STREAM_CODEC));
+    // A crafting recipe, so it has no recipe type of its own
+    public static final DeferredHolder<RecipeSerializer<?>, RecipeSerializer<ToolDamagingShapedRecipe>> TOOL_DAMAGING_SHAPED_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_shaped_tool_damaging",
+            () -> new RecipeSerializer<>(ToolDamagingShapedRecipe.MAP_CODEC, ToolDamagingShapedRecipe.STREAM_CODEC));
 
     // Extracting recipes the server sent to this client, see BetterMobFarms#onDatapackSync
     private static RecipeMap clientRecipes = RecipeMap.EMPTY;

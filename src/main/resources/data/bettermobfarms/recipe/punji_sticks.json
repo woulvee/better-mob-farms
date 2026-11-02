@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "bettermobfarms:crafting_shaped_tool_damaging",
   "category": "building",
   "key": {
     "#": "minecraft:bamboo",
@@ -18,6 +18,7 @@
     "X#Y",
     "###"
   ],
+  "tool_damage": 10,
   "result": {
     "count": 3,
     "id": "bettermobfarms:punji_sticks"

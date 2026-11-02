@@ -105,7 +105,8 @@ public class IncubatorBlockEntity extends BaseContainerBlockEntity {
     // Which items a slot accepts, shared with the menu. The output slots take nothing but mutated eggs.
     public static boolean isValidForSlot(int slot, ItemStack stack) {
         return switch (slot) {
-            case SLOT_DNA -> stack.is(BMFItems.SYRINGE_DNA.get()) && stack.has(BMFDataComponents.DNA.get());
+            case SLOT_DNA -> stack.is(BMFItems.SYRINGE_DNA.get()) && stack.has(BMFDataComponents.DNA.get())
+                    && !stack.has(BMFDataComponents.PLAYER_DNA.get());
             case SLOT_EGG -> stack.is(ItemTags.EGGS);
             case SLOT_NUTRIENTS -> stack.is(BMFItems.LIQUID_NUTRIENTS.get());
             case SLOT_MUTATED_EGG -> stack.is(BMFItems.MUTATED_EGG.get()) && stack.has(BMFDataComponents.DNA.get());

@@ -13,8 +13,11 @@ import com.woulvee.bettermobfarms.client.DnaColors;
 import com.woulvee.bettermobfarms.client.DnaTintSource;
 import com.woulvee.bettermobfarms.client.FanRenderer;
 import com.woulvee.bettermobfarms.client.FanScreen;
+import com.woulvee.bettermobfarms.client.FeedingTroughScreen;
 import com.woulvee.bettermobfarms.client.IncubatorScreen;
 import com.woulvee.bettermobfarms.client.IsSamplingProperty;
+import com.woulvee.bettermobfarms.client.ScarecrowRenderer;
+import com.woulvee.bettermobfarms.client.SelfUseProperty;
 import com.woulvee.bettermobfarms.client.SyringeClientExtensions;
 import com.woulvee.bettermobfarms.item.BMFItems;
 import com.woulvee.bettermobfarms.menu.BMFMenus;
@@ -62,9 +65,13 @@ public class BetterMobFarmsClient {
         event.register(Identifier.fromNamespaceAndPath(BetterMobFarms.MODID, "dna"), DnaTintSource.MAP_CODEC);
     }
 
+    private static final int LYE_COLOR = 0xFFD9D4B4;
+
     @SubscribeEvent
     static void onRegisterBlockTintSources(RegisterColorHandlersEvent.BlockTintSources event) {
         event.register(List.of(new IncubatorEggTint()), BMFBlocks.INCUBATOR.get());
+        // Lye is a milky, pale yellow instead of the biome water color
+        event.register(List.of(state -> LYE_COLOR), BMFBlocks.LYE_CAULDRON.get());
     }
 
     // DNA colors come from spawn egg textures and the client config, so they are recomputed when either changes
@@ -91,16 +98,18 @@ public class BetterMobFarmsClient {
     @SubscribeEvent
     static void onRegisterRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(BMFBlockEntities.FAN.get(), FanRenderer::new);
+        event.registerBlockEntityRenderer(BMFBlockEntities.SCARECROW.get(), ScarecrowRenderer::new);
     }
 
     @SubscribeEvent
     static void onRegisterClientExtensions(RegisterClientExtensionsEvent event) {
-        event.registerItem(new SyringeClientExtensions(), BMFItems.SYRINGE.get());
+        event.registerItem(new SyringeClientExtensions(), BMFItems.SYRINGE.get(), BMFItems.POTION_SYRINGE.get());
     }
 
     @SubscribeEvent
     static void onRegisterItemModelProperties(RegisterConditionalItemModelPropertyEvent event) {
         event.register(Identifier.fromNamespaceAndPath(BetterMobFarms.MODID, "sampling"), IsSamplingProperty.MAP_CODEC);
+        event.register(Identifier.fromNamespaceAndPath(BetterMobFarms.MODID, "self_use"), SelfUseProperty.MAP_CODEC);
     }
 
     @SubscribeEvent
@@ -112,6 +121,7 @@ public class BetterMobFarmsClient {
     static void onRegisterMenuScreens(RegisterMenuScreensEvent event) {
         event.register(BMFMenus.FAN.get(), FanScreen::new);
         event.register(BMFMenus.INCUBATOR.get(), IncubatorScreen::new);
+        event.register(BMFMenus.FEEDING_TROUGH.get(), FeedingTroughScreen::new);
     }
 
     // The trapped effect zeroes the movement speed, which vanilla turns into a strong zoom. Keep only a hint of it.

@@ -15,4 +15,8 @@ public class BMFBlockEntities {
             () -> new BlockEntityType<>(FanBlockEntity::new, BMFBlocks.FAN.get()));
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<IncubatorBlockEntity>> INCUBATOR = BLOCK_ENTITY_TYPES.register("incubator",
             () -> new BlockEntityType<>(IncubatorBlockEntity::new, BMFBlocks.INCUBATOR.get()));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<ScarecrowBlockEntity>> SCARECROW = BLOCK_ENTITY_TYPES.register("scarecrow",
+            () -> new BlockEntityType<>(ScarecrowBlockEntity::new, BMFBlocks.SCARECROW.get()));
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<FeedingTroughBlockEntity>> FEEDING_TROUGH = BLOCK_ENTITY_TYPES.register("feeding_trough",
+            () -> new BlockEntityType<>(FeedingTroughBlockEntity::new, BMFBlocks.FEEDING_TROUGH.get()));
 }

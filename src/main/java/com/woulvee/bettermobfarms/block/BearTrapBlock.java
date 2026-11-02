@@ -1,9 +1,9 @@
 package com.woulvee.bettermobfarms.block;
 
 import com.mojang.serialization.MapCodec;
-import com.woulvee.bettermobfarms.Config;
 import com.woulvee.bettermobfarms.damage.BMFDamageTypes;
 import com.woulvee.bettermobfarms.effect.BMFEffects;
+import com.woulvee.bettermobfarms.util.BMFTags;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -90,7 +90,7 @@ public class BearTrapBlock extends HorizontalDirectionalBlock {
     @Override
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity, InsideBlockEffectApplier effectApplier, boolean isPrecise) {
         if (state.getValue(CLOSED) || !(level instanceof ServerLevel serverLevel) || !(entity instanceof LivingEntity living)
-                || living.isSpectator() || Config.isBearTrapImmune(living.getType())) {
+                || living.isSpectator() || living.is(BMFTags.Entities.BEAR_TRAP_IMMUNE)) {
             return;
         }
         level.setBlockAndUpdate(pos, state.setValue(CLOSED, true));

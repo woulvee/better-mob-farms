@@ -41,6 +41,8 @@ public class BMFItems {
     public static final DeferredItem<BlockItem> FAN = ITEMS.registerSimpleBlockItem(BMFBlocks.FAN);
     public static final DeferredItem<BlockItem> INCUBATOR = ITEMS.registerSimpleBlockItem(BMFBlocks.INCUBATOR);
     public static final DeferredItem<BlockItem> BEAR_TRAP = ITEMS.registerSimpleBlockItem(BMFBlocks.BEAR_TRAP);
+    public static final DeferredItem<BlockItem> FEEDING_TROUGH = ITEMS.registerSimpleBlockItem(BMFBlocks.FEEDING_TROUGH);
+    public static final DeferredItem<BlockItem> SCARECROW = ITEMS.registerSimpleBlockItem(BMFBlocks.SCARECROW);
 
     // MATERIALS
     public static final DeferredItem<Item> ICE_SHARD = ITEMS.registerSimpleItem("ice_shard");
@@ -84,6 +86,8 @@ public class BMFItems {
                 output.accept(BEAR_TRAP.get());
                 output.accept(FAN.get());
                 output.accept(INCUBATOR.get());
+                output.accept(FEEDING_TROUGH.get());
+                output.accept(SCARECROW.get());
                 output.accept(ICE_SHARD.get());
                 output.accept(NETHER_STAR_SHARD.get());
                 output.accept(CORRUPTED_STAR.get());

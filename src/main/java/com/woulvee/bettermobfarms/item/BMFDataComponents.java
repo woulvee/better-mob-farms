@@ -16,6 +16,10 @@ public class BMFDataComponents {
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<EntityType<?>>> DNA = DATA_COMPONENTS.registerComponentType("dna",
             builder -> builder.persistent(EntityType.CODEC).networkSynchronized(EntityType.STREAM_CODEC));
 
+    // Set next to DNA (minecraft:player) when the sample was taken from a player
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<PlayerDna>> PLAYER_DNA = DATA_COMPONENTS.registerComponentType("player_dna",
+            builder -> builder.persistent(PlayerDna.CODEC).networkSynchronized(PlayerDna.STREAM_CODEC));
+
     // The vanilla egg a mutated egg was made from, picks its item model
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<IncubatorEgg>> ORIGIN_EGG = DATA_COMPONENTS.registerComponentType("origin_egg",
             builder -> builder.persistent(IncubatorEgg.CODEC).networkSynchronized(IncubatorEgg.STREAM_CODEC));

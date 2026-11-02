@@ -12,6 +12,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -25,8 +26,8 @@ import org.jspecify.annotations.Nullable;
 
 // The empty syringe has two uses:
 // - Hold right click with an extractable item in the off hand to fill the syringe.
-// - Hold right click on a mob for a second to take a DNA sample. The prick hurts the mob right away,
-//   so hostile and neutral mobs fight back.
+// - Hold right click on a mob or another player for a second to take a DNA sample. The prick hurts the target
+//   right away, so hostile and neutral mobs fight back. Sneaking and holding right click samples yourself.
 public class SyringeItem extends Item {
     private static final int EXTRACT_DURATION = 38;
     private static final int SAMPLE_DURATION = 20;
@@ -39,23 +40,36 @@ public class SyringeItem extends Item {
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         stopSampling(player);
+        // Filling from the off hand wins over sampling yourself
         if (findRecipe(level, player).isPresent()) {
             player.startUsingItem(hand);
             return InteractionResult.CONSUME;
         }
+        if (player.isSecondaryUseActive()) {
+            return sample(player, hand, player);
+        }
         return InteractionResult.PASS;
     }
 
-    // Called from BetterMobFarms#onEntityInteract on both sides, before the target can handle the click itself
+    // Called from BetterMobFarms#onEntityInteract on both sides, before the target can handle the click itself.
+    // Sneaking passes, so the click goes on to use() and samples the player instead.
     public InteractionResult startSampling(Player player, InteractionHand hand, LivingEntity target) {
-        if (target instanceof Player || target.is(BMFTags.Entities.SYRINGE_DNA_BLACKLIST) || player.isUsingItem()) {
+        if (player.isSecondaryUseActive()) {
+            return InteractionResult.PASS;
+        }
+        return sample(player, hand, target);
+    }
+
+    private InteractionResult sample(Player player, InteractionHand hand, LivingEntity target) {
+        if (target.is(BMFTags.Entities.SYRINGE_DNA_BLACKLIST) || player.isUsingItem()) {
             return InteractionResult.PASS;
         }
         // The target has to be known before using starts, it decides the use duration
         player.setData(BMFAttachments.SAMPLING_TARGET, target.getId());
         player.startUsingItem(hand);
         if (player.level() instanceof ServerLevel level) {
-            target.hurtServer(level, level.damageSources().playerAttack(player), SAMPLE_DAMAGE);
+            DamageSource source = target == player ? level.damageSources().generic() : level.damageSources().playerAttack(player);
+            target.hurtServer(level, source, SAMPLE_DAMAGE);
         }
         return InteractionResult.CONSUME;
     }
@@ -85,7 +99,11 @@ public class SyringeItem extends Item {
                     if (!player.isCreative()) {
                         itemStack.shrink(1);
                     }
-                    player.getInventory().placeItemBackInInventory(BMFItems.dnaSyringe(target.getType()));
+                    ItemStack dnaSyringe = BMFItems.dnaSyringe(target.getType());
+                    if (target instanceof Player sampled) {
+                        dnaSyringe.set(BMFDataComponents.PLAYER_DNA.get(), PlayerDna.of(sampled));
+                    }
+                    player.getInventory().placeItemBackInInventory(dnaSyringe);
                 }
             } else {
                 findRecipe(level, player).ifPresent(recipe -> {
@@ -132,6 +150,10 @@ public class SyringeItem extends Item {
 
     public static boolean isSampling(LivingEntity user) {
         return user.getData(BMFAttachments.SAMPLING_TARGET) >= 0;
+    }
+
+    public static boolean isSelfSampling(LivingEntity user) {
+        return user.getData(BMFAttachments.SAMPLING_TARGET) == user.getId();
     }
 
     private static void stopSampling(LivingEntity user) {

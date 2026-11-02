@@ -1,10 +1,11 @@
 {
+	"format_version": "26.3",
 	"credit": "Made by woulvee in Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
 		"0": "bettermobfarms:block/hot_netherite_coated_spikes",
-		"1": "minecraft:block/magma",
-		"particle": "minecraft:block/polished_deepslate"
+		"1": "block/magma",
+		"particle": "block/polished_deepslate"
 	},
 	"elements": [
 		{
@@ -337,6 +338,7 @@
 			"name": "Magma",
 			"from": [0, 1.995, 0],
 			"to": [15.99, 1.995, 15.99],
+			"light_emission": 15,
 			"faces": {
 				"up": {"uv": [0, 0, 16, 16], "texture": "#1"}
 			}
@@ -359,7 +361,7 @@
 			"scale": [0.4, 0.4, 0.4]
 		},
 		"firstperson_lefthand": {
-			"rotation": [0, 225, 0],
+			"rotation": [0, -135, 0],
 			"translation": [0, 2.5, 0],
 			"scale": [0.4, 0.4, 0.4]
 		},
@@ -368,7 +370,7 @@
 			"scale": [0.25, 0.25, 0.25]
 		},
 		"gui": {
-			"rotation": [30, 225, 0],
+			"rotation": [30, -135, 0],
 			"scale": [0.625, 0.625, 0.625]
 		},
 		"head": {
@@ -385,28 +387,28 @@
 		{
 			"name": "Group1",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "Spike_Inner_1",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [1, 2]
 				},
 				{
 					"name": "Spike1_2",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [3, 4]
 				},
 				{
 					"name": "Spike1_1",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [5, 6]
 				}
 			]
@@ -414,28 +416,28 @@
 		{
 			"name": "Group2",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "Spike_Inner_2",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [7, 8]
 				},
 				{
 					"name": "Spike2_2",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [9, 10]
 				},
 				{
 					"name": "Spike2_1",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [11, 12]
 				}
 			]
@@ -443,28 +445,28 @@
 		{
 			"name": "Group3",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 8,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "Spike3_1",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 8,
-					"nbt": "{}",
 					"children": [13, 14]
 				},
 				{
 					"name": "Spike3_2",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 8,
-					"nbt": "{}",
 					"children": [15, 16]
 				},
 				{
 					"name": "Spike_Inner_3",
 					"origin": [0, 0, 0],
+					"scope": 0,
 					"color": 8,
-					"nbt": "{}",
 					"children": [17, 18]
 				}
 			]
@@ -472,28 +474,28 @@
 		{
 			"name": "Group4",
 			"origin": [8, 8, 8],
+			"scope": 0,
 			"color": 0,
-			"nbt": "{}",
 			"children": [
 				{
 					"name": "Spike4_1",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [19, 20]
 				},
 				{
 					"name": "Spike4_2",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [21, 22]
 				},
 				{
 					"name": "Spike_Inner_4",
 					"origin": [8, 8, 8],
+					"scope": 0,
 					"color": 0,
-					"nbt": "{}",
 					"children": [23, 24]
 				}
 			]
