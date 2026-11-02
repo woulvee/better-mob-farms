@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "full=false": {"model": "bettermobfarms:block/feeding_trough"},
+    "full=true": {"model": "bettermobfarms:block/feeding_trough_full"}
+  }
+}

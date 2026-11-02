@@ -1,0 +1,94 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "half": "lower",
+        "facing": "north"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow"
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "north",
+        "player_head": "false"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow_head"
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "east"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "east",
+        "player_head": "false"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow_head",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "south"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "south",
+        "player_head": "false"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow_head",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "west"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "half": "lower",
+        "facing": "west",
+        "player_head": "false"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow_head",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "half": "upper"
+      },
+      "apply": {
+        "model": "bettermobfarms:block/scarecrow_upper"
+      }
+    }
+  ]
+}

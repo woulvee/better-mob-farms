@@ -1,0 +1,965 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [
+		32,
+		32
+	],
+	"textures": {
+		"0": "bettermobfarms:block/scarecrow_body",
+		"1": "bettermobfarms:block/scarecrow_head",
+		"particle": "bettermobfarms:block/scarecrow_body"
+	},
+	"elements": [
+		{
+			"name": "Stick",
+			"from": [
+				7,
+				0,
+				7
+			],
+			"to": [
+				9,
+				16,
+				9
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					7,
+					0,
+					7
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						8,
+						2,
+						9,
+						10
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						4,
+						8,
+						5,
+						16
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						5,
+						8,
+						6,
+						16
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						6,
+						8,
+						7,
+						16
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						7,
+						13,
+						8,
+						14
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "Stick2",
+			"from": [
+				7,
+				16,
+				7
+			],
+			"to": [
+				9,
+				24,
+				9
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					7,
+					16,
+					7
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						7,
+						8,
+						8,
+						12
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						8,
+						10,
+						9,
+						14
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						9,
+						10,
+						10,
+						14
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						10,
+						10,
+						11,
+						14
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						11,
+						14,
+						12,
+						15
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ArmLeft",
+			"from": [
+				-6,
+				20,
+				7
+			],
+			"to": [
+				7,
+				22,
+				9
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					7,
+					21,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						9,
+						2,
+						15.5,
+						3
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						9,
+						3,
+						15.5,
+						4
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						14,
+						14,
+						15,
+						15
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						9,
+						4,
+						15.5,
+						5
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						9,
+						5,
+						15.5,
+						6
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ArmRight",
+			"from": [
+				9,
+				20,
+				7
+			],
+			"to": [
+				22,
+				22,
+				9
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					9,
+					21,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						9,
+						6,
+						15.5,
+						7
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						15,
+						10,
+						16,
+						11
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						9,
+						7,
+						15.5,
+						8
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						9,
+						8,
+						15.5,
+						9
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						9,
+						9,
+						15.5,
+						10
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "Torso",
+			"from": [
+				4,
+				11,
+				6
+			],
+			"to": [
+				12,
+				23,
+				10
+			],
+			"rotation": {
+				"angle": 0,
+				"axis": "y",
+				"origin": [
+					7,
+					21,
+					7
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						0,
+						0,
+						4,
+						6
+					],
+					"texture": "#0"
+				},
+				"east": {
+					"uv": [
+						0,
+						6,
+						2,
+						12
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						4,
+						0,
+						8,
+						6
+					],
+					"texture": "#0"
+				},
+				"west": {
+					"uv": [
+						2,
+						6,
+						4,
+						12
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						4,
+						6,
+						8,
+						8
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderLeft",
+			"from": [
+				0.25,
+				19.25,
+				5.99
+			],
+			"to": [
+				4.25,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": 5,
+				"axis": "z",
+				"origin": [
+					7.25,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						11,
+						10,
+						13,
+						12
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						12,
+						0,
+						14,
+						2
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						11,
+						12,
+						13,
+						14
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						13,
+						10,
+						15,
+						12
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderRight",
+			"from": [
+				11.75,
+				19.25,
+				5.99
+			],
+			"to": [
+				15.75,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": -5,
+				"axis": "z",
+				"origin": [
+					8.75,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						13,
+						12,
+						15,
+						14
+					],
+					"texture": "#0"
+				},
+				"south": {
+					"uv": [
+						14,
+						0,
+						16,
+						2
+					],
+					"texture": "#0"
+				},
+				"up": {
+					"uv": [
+						7,
+						14,
+						9,
+						16
+					],
+					"texture": "#0"
+				},
+				"down": {
+					"uv": [
+						9,
+						14,
+						11,
+						16
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "TorsoInnerNorth",
+			"from": [
+				4,
+				11,
+				6
+			],
+			"to": [
+				12,
+				23,
+				6
+			],
+			"faces": {
+				"south": {
+					"uv": [
+						4,
+						0,
+						0,
+						6
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "TorsoInnerSouth",
+			"from": [
+				4,
+				11,
+				10
+			],
+			"to": [
+				12,
+				23,
+				10
+			],
+			"faces": {
+				"north": {
+					"uv": [
+						8,
+						0,
+						4,
+						6
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "TorsoInnerEast",
+			"from": [
+				12,
+				11,
+				6
+			],
+			"to": [
+				12,
+				23,
+				10
+			],
+			"faces": {
+				"west": {
+					"uv": [
+						2,
+						6,
+						0,
+						12
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "TorsoInnerWest",
+			"from": [
+				4,
+				11,
+				6
+			],
+			"to": [
+				4,
+				23,
+				10
+			],
+			"faces": {
+				"east": {
+					"uv": [
+						4,
+						6,
+						2,
+						12
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "TorsoInnerUp",
+			"from": [
+				4,
+				23,
+				6
+			],
+			"to": [
+				12,
+				23,
+				10
+			],
+			"faces": {
+				"down": {
+					"uv": [
+						4,
+						8,
+						8,
+						6
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderLeftInnerNorth",
+			"from": [
+				0.25,
+				19.25,
+				5.99
+			],
+			"to": [
+				4.25,
+				23.25,
+				5.99
+			],
+			"rotation": {
+				"angle": 5,
+				"axis": "z",
+				"origin": [
+					7.25,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"south": {
+					"uv": [
+						13,
+						10,
+						11,
+						12
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderLeftInnerSouth",
+			"from": [
+				0.25,
+				19.25,
+				10.01
+			],
+			"to": [
+				4.25,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": 5,
+				"axis": "z",
+				"origin": [
+					7.25,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						14,
+						0,
+						12,
+						2
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderLeftInnerUp",
+			"from": [
+				0.25,
+				23.25,
+				5.99
+			],
+			"to": [
+				4.25,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": 5,
+				"axis": "z",
+				"origin": [
+					7.25,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"down": {
+					"uv": [
+						11,
+						14,
+						13,
+						12
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderLeftInnerDown",
+			"from": [
+				0.25,
+				19.25,
+				5.99
+			],
+			"to": [
+				4.25,
+				19.25,
+				10.01
+			],
+			"rotation": {
+				"angle": 5,
+				"axis": "z",
+				"origin": [
+					7.25,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"up": {
+					"uv": [
+						13,
+						12,
+						15,
+						10
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderRightInnerNorth",
+			"from": [
+				11.75,
+				19.25,
+				5.99
+			],
+			"to": [
+				15.75,
+				23.25,
+				5.99
+			],
+			"rotation": {
+				"angle": -5,
+				"axis": "z",
+				"origin": [
+					8.75,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"south": {
+					"uv": [
+						15,
+						12,
+						13,
+						14
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderRightInnerSouth",
+			"from": [
+				11.75,
+				19.25,
+				10.01
+			],
+			"to": [
+				15.75,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": -5,
+				"axis": "z",
+				"origin": [
+					8.75,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"north": {
+					"uv": [
+						16,
+						0,
+						14,
+						2
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderRightInnerUp",
+			"from": [
+				11.75,
+				23.25,
+				5.99
+			],
+			"to": [
+				15.75,
+				23.25,
+				10.01
+			],
+			"rotation": {
+				"angle": -5,
+				"axis": "z",
+				"origin": [
+					8.75,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"down": {
+					"uv": [
+						7,
+						16,
+						9,
+						14
+					],
+					"texture": "#0"
+				}
+			}
+		},
+		{
+			"name": "ShoulderRightInnerDown",
+			"from": [
+				11.75,
+				19.25,
+				5.99
+			],
+			"to": [
+				15.75,
+				19.25,
+				10.01
+			],
+			"rotation": {
+				"angle": -5,
+				"axis": "z",
+				"origin": [
+					8.75,
+					21.25,
+					9
+				]
+			},
+			"faces": {
+				"up": {
+					"uv": [
+						9,
+						16,
+						11,
+						14
+					],
+					"texture": "#0"
+				}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [
+				75,
+				45,
+				0
+			],
+			"translation": [
+				0,
+				2.5,
+				0
+			],
+			"scale": [
+				0.2,
+				0.2,
+				0.2
+			]
+		}
+	},
+	"groups": [
+		{
+			"name": "Body",
+			"origin": [
+				7,
+				21,
+				7
+			],
+			"scope": 0,
+			"color": 0,
+			"children": [
+				0,
+				1,
+				2,
+				3,
+				{
+					"name": "Overlay",
+					"origin": [
+						7,
+						21,
+						7
+					],
+					"scope": 0,
+					"color": 0,
+					"children": [
+						4,
+						5,
+						6,
+						{
+							"name": "TorsoInner",
+							"origin": [
+								0,
+								0,
+								0
+							],
+							"scope": 0,
+							"color": 0,
+							"children": [
+								7,
+								8,
+								9,
+								10,
+								11
+							]
+						},
+						{
+							"name": "ShoulderLeftInner",
+							"origin": [
+								0,
+								0,
+								0
+							],
+							"scope": 0,
+							"color": 0,
+							"children": [
+								12,
+								13,
+								14,
+								15
+							]
+						},
+						{
+							"name": "ShoulderRightInner",
+							"origin": [
+								0,
+								0,
+								0
+							],
+							"scope": 0,
+							"color": 0,
+							"children": [
+								16,
+								17,
+								18,
+								19
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

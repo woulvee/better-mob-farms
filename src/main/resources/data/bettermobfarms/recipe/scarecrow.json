@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": "minecraft:hay_block",
+    "P": "minecraft:carved_pumpkin",
+    "S": "minecraft:stick"
+  },
+  "pattern": [
+    " P ",
+    "SHS",
+    " S "
+  ],
+  "result": {
+    "id": "bettermobfarms:scarecrow"
+  }
+}

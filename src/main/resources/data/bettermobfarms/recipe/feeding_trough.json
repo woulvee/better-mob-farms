@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#u#",
+    "#W#"
+  ],
+  "key": {
+    "#": "#minecraft:logs",
+    "u": "minecraft:bucket",
+    "W": "#minecraft:wooden_fences"
+  },
+  "result": {
+    "id": "bettermobfarms:feeding_trough"
+  }
+}
